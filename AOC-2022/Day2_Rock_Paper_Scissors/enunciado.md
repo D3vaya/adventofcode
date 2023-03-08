@@ -1,5 +1,5 @@
 
-# Día 1: Piedra, Papel, Tijeras
+# Día 2: Piedra, Papel, Tijeras
 [volver a listado de retos](./../../README.md)
 
 ## Enunciado
