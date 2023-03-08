@@ -1,14 +1,14 @@
 
-# Day 1: Conteo De Calorías
+# Día 1: Conteo De Calorías
 [volver a listado de retos](./../../README.md)
 
 ## Enunciado
 
-Los renos de Papá Noel suelen comer comida normal para renos, pero necesitan mucha energía mágica para entregar regalos en Navidad. Por eso, su bocadillo favorito es un tipo especial de carambola que solo crece en lo profundo de la jungla. Los Elfos te han traído en su expedición anual al bosque donde crece la fruta.
+Los renos de Papá Noel suelen comer comida normal para renos, pero necesitan mucha `energía mágica` para entregar regalos en Navidad. Por eso, su bocadillo favorito es un tipo especial de `carambola` que solo crece en lo profundo de la jungla. Los Elfos te han traído en su expedición anual al bosque donde crece la fruta.
 
-Para suministrar suficiente energía mágica, la expedición debe recuperar un mínimo de cincuenta estrellas antes del 25 de diciembre. Aunque los Elfos te aseguran que la arboleda tiene mucha fruta, decides agarrar cualquier fruta que veas por el camino, por si acaso.
+Para suministrar suficiente energía mágica, la expedición debe recuperar un mínimo de `cincuenta estrellas` antes del 25 de diciembre. Aunque los Elfos te aseguran que la arboleda tiene mucha fruta, decides agarrar cualquier fruta que veas por el camino, por si acaso.
 
-Recoge estrellas resolviendo acertijos. Habrá dos rompecabezas disponibles cada día en el calendario de Adviento; el segundo rompecabezas se desbloquea cuando completas el primero. Cada rompecabezas otorga una estrella . ¡Buena suerte!
+Recoge estrellas resolviendo acertijos. Habrá dos rompecabezas disponibles cada día en el calendario de Adviento; el segundo rompecabezas se desbloquea cuando completas el primero. Cada rompecabezas otorga `una estrella` . ¡Buena suerte!
 
 La jungla debe estar demasiado cubierta de maleza y ser difícil de transitar en vehículos o acceder desde el aire; La expedición de los Elfos tradicionalmente va a pie. A medida que sus barcos se acercan a tierra, los Elfos comienzan a hacer un inventario de sus suministros. Una consideración importante es la comida, en particular, la cantidad de calorías que lleva cada Elfo (su entrada de rompecabezas).
 
@@ -36,12 +36,12 @@ Por ejemplo, supongamos que los Elfos terminan de escribir las Calorías de sus 
 
 Esta lista representa las Calorías de la comida que llevan cinco Elfos:
 
-  - El primer Elfo lleva comida con 1000, 2000y 3000Calorías, un total de 6000Calorías.
-  - El segundo Elfo lleva un alimento con 4000Calorías.
-  - El tercer Elfo lleva comida con 5000Calorías 6000, un total de 11000Calorías.
-  - El cuarto Elfo lleva comida con 7000, 8000y 9000Calorías, un total de 24000Calorías.
-  - El quinto Elfo lleva un alimento con 10000Calorías.
+  - El primer Elfo lleva comida con 1000, 2000 y 3000 Calorías, un total de `6000` Calorías.
+  - El segundo Elfo lleva un alimento con `4000` Calorías.
+  - El tercer Elfo lleva comida con 5000 Calorías 6000, un total de `11000` Calorías.
+  - El cuarto Elfo lleva comida con 7000, 8000 y 9000 Calorías, un total de `24000` Calorías.
+  - El quinto Elfo lleva un alimento con `10000` Calorías.
 
-En caso de que los Elfos tengan hambre y necesiten refrigerios adicionales, necesitan saber a qué Elfo preguntar: les gustaría saber cuántas Calorías lleva el Elfo que lleva la mayor cantidad de Calorías . En el ejemplo anterior, esto es 24000(llevado por el cuarto Elfo).
+En caso de que los Elfos tengan hambre y necesiten refrigerios adicionales, necesitan saber a qué Elfo preguntar: les gustaría saber cuántas Calorías lleva el Elfo que lleva la mayor cantidad de `Calorías` . En el ejemplo anterior, esto es `24000`(llevado por el cuarto Elfo).
 
-Encuentra al duende que lleva más calorías. ¿Cuántas calorías totales lleva ese elfo?.
+Encuentra al duende que lleva más calorías. `¿Cuántas calorías totales lleva ese elfo?`.
