@@ -1,32 +1,44 @@
-// 41.171
-const elfOne = [2991, 13880, 13279, 1514, 9507];
-// 49.371
-const elfTwo = [6544, 9672, 13044, 4794, 6648, 8669];
-// 33.390
-const elfThree = [2790, 1196, 3619, 1692, 8727, 2342, 1099, 6083, 3834, 2008];
-// 46.337
-const elfFour = [
-  2974, 4393, 1146, 4240, 1880, 3226, 2390, 5640, 2768, 1887, 4217, 3314, 5653,
-  2609,
-];
-// 62.380
-const elfFive = [
-  4473, 7306, 7909, 6862, 7413, 3738, 2102, 4269, 5966, 7491, 4851,
-];
+import { join } from "path";
+import { readFileSync } from "fs";
 
-const elves = [elfOne, elfTwo, elfThree, elfFour, elfFive];
-let maxCalories = 0;
+const input = readFileSync(join(__dirname, "input.txt"), "utf8");
+const ELVES_CALORIES = input.trim().split("\n");
 
-export const solution = () => {
-  let elfSelected:string = '';
-  // solution here 👇
-  for (let i = 0; i < elves.length; i++) {
-    const totalCalories = elves[i].reduce((sum, num) => sum + num);
-    if (totalCalories > maxCalories) {
-      maxCalories = totalCalories;
-      elfSelected = `elfo Nº ${i + 1}`;
+export const formatElfArray = (): Map<number, number> => {
+  let elfCount = 0;
+  let caloriesCount = 0;
+  const elves = new Map<number, number>();
+
+  ELVES_CALORIES.forEach((calories, i) => {
+    if (calories.length > 0) {
+      caloriesCount += Number(calories);
+    } else {
+      ++elfCount;
+      elves.set(elfCount, caloriesCount);
+      caloriesCount = 0;
     }
-  }
+
+    if (ELVES_CALORIES.length - 1 === i) {
+      ++elfCount;
+      elves.set(elfCount, caloriesCount);
+    }
+  });
+
+  return elves;
+};
+
+export const solution = (): number => {
+  let maxCalories = 0;
+  let elfSelected: string = "";
+  const elvesMap = formatElfArray();
+  
+  elvesMap.forEach((caloriesByElf, i) => {
+    if (caloriesByElf > maxCalories) {
+      maxCalories = caloriesByElf;
+      elfSelected = `elfo Nº ${i}`;
+    }
+  });
+
   console.log(`el elfo que mas calorias tiene es el ${elfSelected}`);
   console.log(maxCalories);
   return maxCalories;
