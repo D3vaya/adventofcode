@@ -31,8 +31,9 @@ CrZsJsPPZsGzwwsLwLmpwMDw
 
 Para ayudar a priorizar la reorganización de elementos, cada tipo de elemento se puede convertir en una **prioridad** :
 
-Los tipos de elementos aen minúsculas ztienen prioridades del 1 al 26.
-Los tipos de elementos Aen mayúsculas Ztienen prioridades de 27 a 52.
+  - Los tipos de elementos en minúsculas de la **a** a la **z** tienen prioridades del 1 al 26.
+  - Los tipos de elementos en mayúsculas de la **A** a la **Z** tienen prioridades del 27 al 52.
+
 En el ejemplo anterior, la prioridad del tipo de artículo que aparece en ambos compartimentos de cada mochila es 16 ( p), 38 ( L), 42 ( P), 22 ( v), 20 ( t) y 19 ( s); la suma de estos es **157**.
 
 Encuentra el tipo de artículo que aparece en ambos compartimentos de cada mochila. **¿Cuál es la suma de las prioridades de esos tipos de elementos?**
