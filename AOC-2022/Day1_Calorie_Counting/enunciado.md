@@ -1,5 +1,4 @@
-
-# Día 1: Conteo De Calorías
+# ⭐️ Día 1: Conteo De Calorías
 [volver a listado de retos](./../../README.md)
 
 ## Enunciado

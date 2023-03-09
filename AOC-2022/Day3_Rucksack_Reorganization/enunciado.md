@@ -1,4 +1,4 @@
-# Día 3: Reorganización de Mochilas
+# ⭐️ Día 3: Reorganización de Mochilas
 [volver a listado de retos](./../../README.md)
 
 ## Enunciado

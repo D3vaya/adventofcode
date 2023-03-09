@@ -1,4 +1,4 @@
-# Day 1: Calorie Couting
+# ⭐️ Day 1: Calorie Couting
 [return to list of challenges](./../../README.md)
 ## Statement
 

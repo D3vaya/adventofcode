@@ -1,4 +1,4 @@
-# Day 2: Rock Paper Scissors
+# ⭐️ Day 2: Rock Paper Scissors
 [return to list of challenges](./../../README.md)
 
 ## Statement
