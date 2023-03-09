@@ -24,7 +24,7 @@ CrZsJsPPZsGzwwsLwLmpwMDw
 
   - La primera mochila contiene los artículos vJrwpWtwJgWrhcsFMMfFFhFp, lo que significa que su primer compartimento contiene los artículos vJrwpWtwJgWr, mientras que el segundo compartimento contiene los artículos hcsFMMfFFhFp. El único tipo de elemento que aparece en ambos compartimentos es minúscula **p**.
   - Los compartimentos de la segunda mochila contienen jqHRNqRjqzjGDLGL y rsFMfFZSrLrFZsSL. El único tipo de elemento que aparece en ambos compartimentos es mayúscula **L**.
-  - Los compartimentos de la tercera mochila contienen PmmdzqPrVy vPwwTWBwg; el único tipo de elemento común es mayúsculas **P**.
+  - Los compartimentos de la tercera mochila contienen PmmdzqPrV y vPwwTWBwg; el único tipo de elemento común es mayúsculas **P**.
   - Los compartimentos de la cuarta mochila solo comparten el tipo de artículo **v**.
   - Los compartimentos de la quinta mochila solo comparten el tipo de artículo **t**.
   - Los compartimentos de la sexta mochila solo comparten el tipo de artículo **s**.
