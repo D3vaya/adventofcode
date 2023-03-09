@@ -45,3 +45,13 @@ Esta lista representa las Calorías de la comida que llevan cinco Elfos:
 En caso de que los Elfos tengan hambre y necesiten refrigerios adicionales, necesitan saber a qué Elfo preguntar: les gustaría saber cuántas Calorías lleva el Elfo que lleva la mayor cantidad de `Calorías` . En el ejemplo anterior, esto es `24000`(llevado por el cuarto Elfo).
 
 Encuentra al duende que lleva más calorías. `¿Cuántas calorías totales lleva ese elfo?`.
+
+## ⭐️⭐️ Segunda Parte
+
+Para cuando calcules la respuesta a la pregunta de los Elfos, ya se habrán dado cuenta de que el Elfo que lleva la mayor cantidad de calorías de comida podría eventualmente `quedarse sin refrigerios` .
+
+Para evitar esta situación inaceptable, a los Elfos les gustaría saber el total de Calorías que llevan los **tres** Elfos que llevan la mayor cantidad de Calorías. De esa manera, incluso si uno de esos Elfos se queda sin bocadillos, todavía tienen dos copias de seguridad.
+
+En el ejemplo anterior, los tres primeros Elfos son el cuarto Elfo (con 24000Calorías), luego el tercer Elfo (con 11000 Calorías), luego el quinto Elfo (con 10000 Calorías). La suma de las Calorías que llevan estos tres duendes es **45000**.
+
+Encuentra los tres Elfos principales que llevan la mayor cantidad de calorías. **¿Cuántas calorías llevan esos duendes en total?**.
