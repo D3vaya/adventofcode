@@ -8,9 +8,9 @@ Los Elfos comienzan a establecer un campamento en la playa. Para decidir qué ca
 
 Rock Paper Scissors es un juego entre dos jugadores. Cada juego contiene muchas rondas; en cada ronda, los jugadores eligen simultáneamente uno de piedra, papel o tijera usando una forma de mano. Luego, se selecciona un ganador para esa ronda: Roca derrota a Tijeras, Tijeras derrota a Papel y Papel derrota a Roca. Si ambos jugadores eligen la misma forma, la ronda termina en empate.
 
-Agradecido por tu ayuda ayer, un Elfo te da una **guía de estrategia encriptada** (tu entrada de rompecabezas) que dicen que seguramente te ayudará a ganar. "La primera columna es lo que tu oponente va a jugar: Apara Piedra, Bpara Papel y Cpara Tijeras. La segunda columna--" De repente, el Elfo es llamado para ayudar con la tienda de campaña de alguien.
+Agradecido por tu ayuda ayer, un Elfo te da una **guía de estrategia encriptada** (tu entrada de rompecabezas) que dicen que seguramente te ayudará a ganar. "La primera columna es lo que tu oponente va a jugar: **A** para Piedra, **B** para Papel y **C** para Tijeras. La segunda columna--" De repente, el Elfo es llamado para ayudar con la tienda de campaña de alguien.
 
-La segunda columna, razona , debe ser lo que debe tocar en respuesta: Xpara Piedra, Ypara Papel y Zpara Tijeras. Ganar cada vez sería sospechoso, por lo que las respuestas deben haber sido cuidadosamente elegidas.
+La segunda columna, razona , debe ser lo que debe tocar en respuesta: **X** para Piedra, **Y** para Papel y **Z** para Tijeras. Ganar cada vez sería sospechoso, por lo que las respuestas deben haber sido cuidadosamente elegidas.
 
 El ganador de todo el torneo es el jugador con la puntuación más alta. Su **puntaje total** es la suma de sus puntajes para cada ronda. El puntaje de una sola ronda es el puntaje de la **forma que seleccionó** (1 para Piedra, 2 para Papel y 3 para Tijeras) más el puntaje para el **resultado de la ronda** (0 si perdió, 3 si la ronda fue un empate , y 6 si ganaste).
 
