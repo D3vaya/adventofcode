@@ -52,6 +52,6 @@ Para cuando calcules la respuesta a la pregunta de los Elfos, ya se habrán dado
 
 Para evitar esta situación inaceptable, a los Elfos les gustaría saber el total de Calorías que llevan los **tres** Elfos que llevan la mayor cantidad de Calorías. De esa manera, incluso si uno de esos Elfos se queda sin bocadillos, todavía tienen dos copias de seguridad.
 
-En el ejemplo anterior, los tres primeros Elfos son el cuarto Elfo (con 24000Calorías), luego el tercer Elfo (con 11000 Calorías), luego el quinto Elfo (con 10000 Calorías). La suma de las Calorías que llevan estos tres duendes es **45000**.
+En el ejemplo anterior, los tres primeros Elfos son el cuarto Elfo (con 24000 Calorías), luego el tercer Elfo (con 11000 Calorías), luego el quinto Elfo (con 10000 Calorías). La suma de las Calorías que llevan estos tres duendes es **45000**.
 
 Encuentra los tres Elfos principales que llevan la mayor cantidad de calorías. **¿Cuántas calorías llevan esos duendes en total?**.
