@@ -1,15 +1,15 @@
 import { join } from "path";
 import { readFileSync } from "fs";
 
-const input = readFileSync(join(__dirname, "input.txt"), "utf8");
-// const inputMock: string = `A Y
-// B X
-// C Z`;
+const INPUT = readFileSync(join(__dirname, "input.txt"), "utf8");
+const INPUT_MOCK: string = `A Y
+B X
+C Z`;
 
-const arrayHelp = input.trim().split("\n");
+const ARRAY_OF_PLAYS = INPUT.trim().split("\n");
 
 const SCORE = new Map<string, number>();
-SCORE.set("A", 1); // STONE
+SCORE.set("A", 1); // ROCK
 SCORE.set("B", 2); // PAPER
 SCORE.set("C", 3); // SCISSORS
 
@@ -34,10 +34,28 @@ RESULTS.set("CA", "WIN");
 RESULTS.set("CB", "LOSE");
 RESULTS.set("CC", "DRAW");
 
+// Part Two
+const STRATEGY_RESULTS_PART_TWO_X = new Map<string, string>();
+STRATEGY_RESULTS_PART_TWO_X.set("A", "C");
+STRATEGY_RESULTS_PART_TWO_X.set("B", "A");
+STRATEGY_RESULTS_PART_TWO_X.set("C", "B");
+
+const STRATEGY_PART_TWO_Z = new Map<string, string>();
+STRATEGY_PART_TWO_Z.set("A", "B");
+STRATEGY_PART_TWO_Z.set("B", "C");
+STRATEGY_PART_TWO_Z.set("C", "A");
+
+const STRATEGY_GUIDE_PT = new Map<string, (o: string) => string>();
+
+STRATEGY_GUIDE_PT.set("X", (m: string) => STRATEGY_RESULTS_PART_TWO_X.get(m)!);
+STRATEGY_GUIDE_PT.set("Y", (m: string) => m);
+STRATEGY_GUIDE_PT.set("Z", (m: string) => STRATEGY_PART_TWO_Z.get(m)!);
+
 export const rockPaperScissor = (): number => {
   // solution 🚧
   let roundPoints = 0;
-  arrayHelp.forEach((strategyArray) => {
+  let roundPointsPartTwo = 0;
+  ARRAY_OF_PLAYS.forEach((strategyArray) => {
     const [opponentPlay, strategy] = strategyArray.split(" ");
 
     const strategyMove = STRATEGY_GUIDE.get(strategy)!;
@@ -47,9 +65,27 @@ export const rockPaperScissor = (): number => {
     const pointsResult = SCORE_RESULTS.get(playResult)!;
 
     roundPoints += pointsResult + pointsStrategy;
+    roundPointsPartTwo += partTwo(opponentPlay, strategy);
   });
+  console.log('[LOG] 🚧 PART TWO', roundPointsPartTwo)
   return roundPoints;
 };
+
+const partTwo = (opponentPlay: string, strategy: string): number => {
+  let roundPoints = 0;
+
+  const newStrategy = STRATEGY_GUIDE_PT.get(strategy)!(opponentPlay);
+  const pointsStrategy = SCORE.get(newStrategy)!;
+
+  const playResult = RESULTS.get(opponentPlay + newStrategy)!;
+  const pointsResult = SCORE_RESULTS.get(playResult)!;
+
+  roundPoints += pointsResult + pointsStrategy;
+
+  return roundPoints;
+};
+
 // Success Result 12855 ⭐️
-console.log("[LOG] 🚧 ", rockPaperScissor());
-rockPaperScissor();
+// Success Result Part Tow 12855 ⭐️⭐️
+
+console.log("[LOG] 🚧 PART ONE", rockPaperScissor());
