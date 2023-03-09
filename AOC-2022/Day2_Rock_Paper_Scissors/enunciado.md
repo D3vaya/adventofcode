@@ -1,4 +1,3 @@
-
 # Día 2: Piedra, Papel, Tijeras
 [volver a listado de retos](./../../README.md)
 
@@ -34,6 +33,8 @@ En este ejemplo, si siguiera la guía de estrategia, obtendría una puntuación 
 
 **¿Cuál sería su puntaje total si todo sale exactamente de acuerdo con su guía de estrategia?**
 
+[Para comenzar, obtenga la entrada de el desafío.](./input.txt)
+
 ## ⭐️⭐️ Parte Dos
 
 El elfo termina de ayudar con la tienda y vuelve a ti sigilosamente. "De todos modos, la segunda columna dice cómo debe terminar la ronda: **X** significa que debes perder, **Y** significa que debes terminar la ronda en un empate y **Z** significa que debes ganar. ¡Buena suerte!"
@@ -46,3 +47,5 @@ En la tercera ronda, derrotarás a las Tijeras de tu oponente con Rock por una p
 Ahora que está descifrando correctamente la guía de estrategia ultrasecreta, obtendrá una puntuación total de **12**.
 
 Siguiendo las instrucciones del duende para la segunda columna, **¿ cuál sería tu puntaje total si todo sale exactamente de acuerdo con tu guía de estrategia?**
+
+[Para comenzar, obtenga la entrada de el desafío.](./input.txt)

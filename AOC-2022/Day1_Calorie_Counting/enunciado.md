@@ -46,6 +46,8 @@ En caso de que los Elfos tengan hambre y necesiten refrigerios adicionales, nece
 
 Encuentra al duende que lleva más calorías. `¿Cuántas calorías totales lleva ese elfo?`.
 
+[Para comenzar, obtenga la entrada de el desafío.](./input.txt)
+
 ## ⭐️⭐️ Segunda Parte
 
 Para cuando calcules la respuesta a la pregunta de los Elfos, ya se habrán dado cuenta de que el Elfo que lleva la mayor cantidad de calorías de comida podría eventualmente `quedarse sin refrigerios` .
@@ -55,3 +57,5 @@ Para evitar esta situación inaceptable, a los Elfos les gustaría saber el tota
 En el ejemplo anterior, los tres primeros Elfos son el cuarto Elfo (con 24000 Calorías), luego el tercer Elfo (con 11000 Calorías), luego el quinto Elfo (con 10000 Calorías). La suma de las Calorías que llevan estos tres duendes es **45000**.
 
 Encuentra los tres Elfos principales que llevan la mayor cantidad de calorías. **¿Cuántas calorías llevan esos duendes en total?**.
+
+[Para comenzar, obtenga la entrada de el desafío.](./input.txt)
