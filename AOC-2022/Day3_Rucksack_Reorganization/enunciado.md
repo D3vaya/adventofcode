@@ -7,7 +7,7 @@ Un elfo tiene el importante trabajo de cargar todas las **mochilas** con suminis
 
 Cada mochila tiene dos grandes **compartimentos** . Todos los artículos de un tipo determinado deben ir exactamente en uno de los dos compartimentos. El duende que hizo el equipaje no siguió esta regla para exactamente un tipo de artículo por mochila.
 
-Los Elfos han hecho una lista de todos los elementos que se encuentran actualmente en cada mochila (su entrada de rompecabezas), pero necesitan su ayuda para encontrar los errores. Cada tipo de artículo se identifica con una sola letra mayúscula o minúscula (es decir, ay Ase refiere a diferentes tipos de artículos).
+Los Elfos han hecho una lista de todos los elementos que se encuentran actualmente en cada mochila (su entrada de rompecabezas), pero necesitan su ayuda para encontrar los errores. Cada tipo de artículo se identifica con una sola letra mayúscula o minúscula (es decir, `a` y `A` se refiere a diferentes tipos de artículos).
 
 La lista de artículos para cada mochila se da como caracteres en una sola línea. Una mochila determinada siempre tiene el mismo número de artículos en cada uno de sus dos compartimentos, por lo que la primera mitad de los caracteres representan artículos en el primer compartimento, mientras que la segunda mitad de los caracteres representan artículos en el segundo compartimento.
 
