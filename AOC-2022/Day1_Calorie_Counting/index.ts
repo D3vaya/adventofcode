@@ -27,7 +27,8 @@ export const formatElfArray = (): Map<number, number> => {
   return elves;
 };
 
-export const solution = (): number => {
+export const calorieCounting = (): number => {
+  // solution 🚧
   let maxCalories = 0;
   let elfSelected: string = "";
   const elvesMap = formatElfArray();
@@ -44,4 +45,5 @@ export const solution = (): number => {
   return maxCalories;
 };
 
-solution();
+// Success Result 68467 ⭐️
+calorieCounting();
