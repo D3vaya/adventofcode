@@ -64,5 +64,57 @@ export const rucksackReorganization = () => {
   return sumPriority;
 };
 
+// PART TWO
+
+const AMOUNT_PER_GROUP = 3;
+
+const partTwo = (): number => {
+  let sumPriorityBadge = 0;
+  const gp = groupsBackpacks();
+  gp.map((group) => {
+    const badge = matchBadge(group)!;
+    sumPriorityBadge += mapDictionary.get(badge)!;
+  });
+  return sumPriorityBadge;
+};
+
+const matchBadge = (groupBackpacks: string[]): string | null => {
+  if (groupBackpacks.length !== 3) return null;
+
+  let badgeTMP: string = "";
+  const backpackOne = groupBackpacks[0];
+  const backpackTwo = groupBackpacks[1];
+  const backpackThree = groupBackpacks[2];
+
+  backpackOne.split("").forEach((letter) => {
+    if (backpackTwo.includes(letter) && backpackThree.includes(letter)) {
+      badgeTMP = letter;
+    }
+  });
+
+  return badgeTMP;
+};
+
+const groupsBackpacks = (): string[][] => {
+  let groupsTMP: string[] = [];
+  const groups: string[][] = [];
+
+  let counterGroup = 0;
+
+  INPUT.forEach((backpack, i) => {
+    groupsTMP.push(backpack);
+    ++counterGroup;
+    if (counterGroup === AMOUNT_PER_GROUP) {
+      groups.push(groupsTMP);
+      counterGroup = 0;
+      groupsTMP = [];
+    }
+  });
+  return groups;
+};
+
 // Success Result 7908 ⭐️
 rucksackReorganization();
+
+// Success Result 2838 ⭐️⭐️
+partTwo()
