@@ -14,3 +14,5 @@ You don't need a computer science background to participate - just a little prog
   - [versión español](./AOC-2022/Day3_Rucksack_Reorganization/enunciado.md)
 - [⭐️ Day 4: Camp Cleanup](./AOC-2022/Day4_Camp_Cleanup/statement.md)
   - [versión español](./AOC-2022/Day4_Camp_Cleanup/enunciado.md)
+- [⭐️ Day 5: Supply Stacks](./AOC-2022/Day5_Supply_Stacks/statement.md)
+  - [versión español](./AOC-2022/Day5_Supply_Stacks/enunciado.md)
