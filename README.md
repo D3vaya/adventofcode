@@ -12,3 +12,4 @@ You don't need a computer science background to participate - just a little prog
   - [versión español](./AOC-2022/Day2_Rock_Paper_Scissors/enunciado.md)
 - [⭐️ Day 3: Rucksack Reorganization](./AOC-2022/Day3_Rucksack_Reorganization/statement.md)
   - [versión español](./AOC-2022/Day3_Rucksack_Reorganization/enunciado.md)
+- [⭐️ Day 4: Camp Cleanup](./AOC-2022/Day4_Camp_Cleanup/statement.md)
