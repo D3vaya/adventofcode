@@ -2,12 +2,12 @@ import { join } from "path";
 import { readFileSync } from "fs";
 
 const INPUT = readFileSync(join(__dirname, "input.txt"), "utf8").split("\n");
-const INPUT_MOCK: string = `vJrwpWtwJgWrhcsFMMfFFhFp
+const INPUT_MOCK: string[] = `vJrwpWtwJgWrhcsFMMfFFhFp
 jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
 PmmdzqPrVvPwwTWBwg
 wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
 ttgJtRGJQctTZtZT
-CrZsJsPPZsGzwwsLwLmpwMDw`;
+CrZsJsPPZsGzwwsLwLmpwMDw`.split("\n");
 
 const LETTERS = [
   "a",
