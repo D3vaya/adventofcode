@@ -42,7 +42,7 @@ Encuentra el tipo de artículo que aparece en ambos compartimentos de cada mochi
 
 Cuando termine de identificar los elementos extraviados, los Elfos se acercarán a usted con otro problema.
 
-Por seguridad, los Elfos se dividen en grupos de tres. Cada Elfo lleva una insignia que identifica a su grupo. Para mayor eficiencia, dentro de cada grupo de tres Elfos, la insignia es el **único tipo de elemento que llevan los tres Elfos** . Es decir, si la insignia de un grupo es el tipo de artículo B, los tres Elfos tendrán algún tipo de artículo Ben algún lugar de su mochila y, como máximo, dos de los Elfos llevarán cualquier otro tipo de artículo.
+Por seguridad, los Elfos se dividen en grupos de tres. Cada Elfo lleva una insignia que identifica a su grupo. Para mayor eficiencia, dentro de cada grupo de tres Elfos, la insignia es el **único tipo de elemento que llevan los tres Elfos** . Es decir, si la insignia de un grupo es el tipo de artículo B, los tres Elfos tendrán algún tipo de artículo B en algún lugar de su mochila y, como máximo, dos de los Elfos llevarán cualquier otro tipo de artículo.
 
 El problema es que alguien se olvidó de poner la etiqueta de autenticidad actualizada de este año en las insignias. Es necesario sacar todas las insignias de las mochilas para poder colocar las nuevas pegatinas de autenticidad.
 
