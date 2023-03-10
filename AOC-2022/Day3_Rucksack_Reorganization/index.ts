@@ -1,7 +1,7 @@
 import { join } from "path";
 import { readFileSync } from "fs";
 
-const INPUT = readFileSync(join(__dirname, "input.txt"), "utf8");
+const INPUT = readFileSync(join(__dirname, "input.txt"), "utf8").split("\n");
 const INPUT_MOCK: string = `vJrwpWtwJgWrhcsFMMfFFhFp
 jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
 PmmdzqPrVvPwwTWBwg
@@ -41,7 +41,7 @@ const LETTERS = [
 const lettersUpperCase = LETTERS.map((l) => l.toLocaleUpperCase());
 const dictionary = LETTERS.concat(lettersUpperCase);
 
-const mapDictionary = new Map(dictionary.map((letter, i) => [letter, i+1]));
+const mapDictionary = new Map(dictionary.map((letter, i) => [letter, i + 1]));
 
 const evaluateMatches = (backpack: string): string => {
   const compartmentA = backpack.slice(0, backpack.length / 2);
@@ -56,9 +56,8 @@ const evaluateMatches = (backpack: string): string => {
 };
 
 export const rucksackReorganization = () => {
-  const arrayBackpack = INPUT.split("\n");
   let sumPriority = 0;
-  arrayBackpack.forEach((backpack) => {
+  INPUT.forEach((backpack) => {
     const letterMatch = evaluateMatches(backpack);
     sumPriority += mapDictionary.get(letterMatch)!;
   });
