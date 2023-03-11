@@ -1,4 +1,4 @@
-# ⭐️ Día 4: Limpieza del Campamento
+# ⭐️ Día 5: Pilas de suministros
 [volver a listado de retos](./../../README.md)
 
 ## Enunciado
