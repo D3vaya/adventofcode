@@ -38,25 +38,25 @@ const stack7 = new BoxStack(["H", "B", "N", "C", "D", "Z", "G", "V"]);
 const stack8 = new BoxStack(["S", "J", "N", "M", "G", "C"]);
 const stack9 = new BoxStack(["G", "P", "N", "W", "C", "J", "D", "L"]);
 
-const loadBoxPositionExample = () => {
-  mapStack.set('1', stack1);
-  mapStack.set('2', stack2);
-  mapStack.set('3', stack3);
+const loadBoxPositionExample = (): void => {
+  mapStack.set("1", stack1);
+  mapStack.set("2", stack2);
+  mapStack.set("3", stack3);
 };
 
-const loadBoxPositionChallenge = () => {
-  mapStack.set('1', stack1);
-  mapStack.set('2', stack2);
-  mapStack.set('3', stack3);
-  mapStack.set('4', stack4);
-  mapStack.set('5', stack5);
-  mapStack.set('6', stack6);
-  mapStack.set('7', stack7);
-  mapStack.set('8', stack8);
-  mapStack.set('9', stack9);
+const loadBoxPositionChallenge = (): void => {
+  mapStack.set("1", stack1);
+  mapStack.set("2", stack2);
+  mapStack.set("3", stack3);
+  mapStack.set("4", stack4);
+  mapStack.set("5", stack5);
+  mapStack.set("6", stack6);
+  mapStack.set("7", stack7);
+  mapStack.set("8", stack8);
+  mapStack.set("9", stack9);
 };
 
-const extractCurrentValues = () => {
+const extractCurrentValues = (): string => {
   let positionTopBoxes = "";
   mapStack.forEach((stack) => {
     positionTopBoxes += stack.top?.value;
