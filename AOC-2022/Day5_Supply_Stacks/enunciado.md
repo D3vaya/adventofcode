@@ -23,7 +23,7 @@ move 2 from 2 to 1
 move 1 from 1 to 2
 ```
 
-En este ejemplo, hay tres pilas de cajas. La pila 1 contiene dos cajas: la caja Zestá en la parte inferior y la caja Nestá en la parte superior. La pila 2 contiene tres cajas; de abajo hacia arriba, son cajas `M, C y D`. Finalmente, la pila 3 contiene una sola caja, **P**.
+En este ejemplo, hay tres pilas de cajas. La pila 1 contiene dos cajas: la caja `Z` está en la parte inferior y la caja `N` está en la parte superior. La pila 2 contiene tres cajas; de abajo hacia arriba, son cajas `M, C y D`. Finalmente, la pila 3 contiene una sola caja, **P**.
 
 Luego, se da el procedimiento de reordenamiento. En cada paso del procedimiento, se mueve una cantidad de cajas de una pila a otra pila diferente. En el primer paso del procedimiento de reorganización anterior, se mueve una caja de la pila 2 a la pila 1, lo que da como resultado esta configuración:
 
