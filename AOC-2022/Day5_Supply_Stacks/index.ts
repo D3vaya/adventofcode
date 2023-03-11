@@ -82,5 +82,5 @@ export const supplyStacks = (): string => {
   return extractCurrentValues();
 };
 // Success Result Mock Example -> CMZ
-// Success Result Input ->
+// Success Result Input -> CWMTGHBDW
 console.log(supplyStacks());
