@@ -114,7 +114,7 @@ Luego, cuando ambas cajas se mueven de la pila 2 a la pila 1, también **conserv
  1   2   3
 ```
 
-Finalmente, una sola caja todavía se mueve de la pila 1 a la pila 2, pero ahora es la caja Cla que se mueve:
+Finalmente, una sola caja todavía se mueve de la pila 1 a la pila 2, pero ahora es la caja C la que se mueve:
 
 ```
         [D]
