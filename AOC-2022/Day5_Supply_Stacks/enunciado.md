@@ -44,7 +44,7 @@ En el segundo paso, se mueven tres cajas de la pila 1 a la pila 3. Las cajas se 
  1   2   3
 ```
 
-Luego, ambas cajas se mueven de la pila 2 a la pila 1. Nuevamente, debido a que las cajas se mueven **una a la vez** , la caja Ctermina debajo de la caja **M**:
+Luego, ambas cajas se mueven de la pila 2 a la pila 1. Nuevamente, debido a que las cajas se mueven **una a la vez** , la caja **C** termina debajo de la caja **M**:
 
 ```
         [Z]
