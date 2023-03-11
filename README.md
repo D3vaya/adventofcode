@@ -16,3 +16,5 @@ You don't need a computer science background to participate - just a little prog
   - [versión español](./AOC-2022/Day4_Camp_Cleanup/enunciado.md)
 - [⭐️ Day 5: Supply Stacks](./AOC-2022/Day5_Supply_Stacks/statement.md)
   - [versión español](./AOC-2022/Day5_Supply_Stacks/enunciado.md)
+- [⭐️ Day 6: Tuning Trouble](./AOC-2022/Day6_Tuning_Trouble/statement.md)
+  - [versión español](./AOC-2022/Day6_Tuning_Trouble/enunciado.md)
