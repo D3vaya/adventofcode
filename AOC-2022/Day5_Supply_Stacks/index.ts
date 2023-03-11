@@ -9,7 +9,7 @@ const INPUT_MOCK = `1,2,1
 2,2,1
 1,1,2`.split("\n");
 
-const mapStack = new Map<number, BoxStack>();
+const mapStack = new Map<string, BoxStack>();
 
 // stacks examples
 //     [D]
@@ -39,21 +39,21 @@ const stack8 = new BoxStack(["S", "J", "N", "M", "G", "C"]);
 const stack9 = new BoxStack(["G", "P", "N", "W", "C", "J", "D", "L"]);
 
 const loadBoxPositionExample = () => {
-  mapStack.set(1, stack1);
-  mapStack.set(2, stack2);
-  mapStack.set(3, stack3);
+  mapStack.set('1', stack1);
+  mapStack.set('2', stack2);
+  mapStack.set('3', stack3);
 };
 
 const loadBoxPositionChallenge = () => {
-  mapStack.set(1, stack1);
-  mapStack.set(2, stack2);
-  mapStack.set(3, stack3);
-  mapStack.set(4, stack4);
-  mapStack.set(5, stack5);
-  mapStack.set(6, stack6);
-  mapStack.set(7, stack7);
-  mapStack.set(8, stack8);
-  mapStack.set(9, stack9);
+  mapStack.set('1', stack1);
+  mapStack.set('2', stack2);
+  mapStack.set('3', stack3);
+  mapStack.set('4', stack4);
+  mapStack.set('5', stack5);
+  mapStack.set('6', stack6);
+  mapStack.set('7', stack7);
+  mapStack.set('8', stack8);
+  mapStack.set('9', stack9);
 };
 
 const extractCurrentValues = () => {
@@ -68,8 +68,8 @@ export const supplyStacks = (): string => {
   loadBoxPositionChallenge();
   INPUT.forEach((procedure) => {
     const [units, sourceStack, targetStack] = procedure.split(",");
-    const sourceStackSelected = mapStack.get(Number(sourceStack))!;
-    const targetStackSelected = mapStack.get(Number(targetStack))!;
+    const sourceStackSelected = mapStack.get(sourceStack)!;
+    const targetStackSelected = mapStack.get(targetStack)!;
     // procedures
     //move 1 from 2 to 1
     //mover una(1) caja de pila 2 a pila 1
