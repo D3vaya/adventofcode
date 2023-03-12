@@ -1,4 +1,4 @@
-class BoxNode {
+export class BoxNode {
   value: string;
   next: BoxNode | null;
 
@@ -44,16 +44,9 @@ export class BoxStack {
   remove() {
     if (this.length > 0) {
       this.top = this.top?.next!;
+      this.length--;
     }
-    this.length--;
     return this;
   }
 
-  isEmpty() {
-    return this.length == 0;
-  }
-
-  size() {
-    return this.length;
-  }
 }
