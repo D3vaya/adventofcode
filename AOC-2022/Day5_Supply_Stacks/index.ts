@@ -12,11 +12,10 @@ const INPUT_MOCK = `1,2,1
 
 const supplyStacks = new SupplyStacks(INPUT_MOCK);
 
-supplyStacks.main();
-//console.log('[LOG] 🚧 ', supplyStacks.extractCurrentValues())
+//supplyStacks.main();
+//console.log('[LOG] 🚧 ', supplyStacks.printResult())
 
 
-const sQ = new SupplyStacksPartTwo(INPUT_MOCK);
-sQ.main()
-console.log('[LOG] 🚧 ', sQ.mapQueue)
-console.log('[LOG] 🚧 ', sQ.extractCurrentValues())
+//const sQ = new SupplyStacksPartTwo(INPUT_MOCK);
+// console.log('[LOG] 🚧 ', sQ.mapQueue)
+// console.log('[LOG] 🚧 ', sQ.printResult())

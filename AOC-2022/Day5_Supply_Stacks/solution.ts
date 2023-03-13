@@ -41,12 +41,12 @@ export class SupplyStacks {
     this.mapStack.set("3", new BoxStack(["P"]));
   }
 
-  extractCurrentValues(): string {
-    let positionTopBoxes = "";
+  printResult(): string {
+    let result = "";
     this.mapStack.forEach((stack) => {
-      positionTopBoxes += stack.top?.value;
+      result += stack.top?.value;
     });
-    return positionTopBoxes;
+    return result;
   }
 
   main = () => {
@@ -59,9 +59,6 @@ export class SupplyStacks {
       const [units, sourceStack, targetStack] = procedure.split(",");
       const sourceStackSelected = this.mapStack.get(sourceStack)!;
       const targetStackSelected = this.mapStack.get(targetStack)!;
-      // procedures
-      //move 1 from 2 to 1
-      //mover una(1) caja de pila 2 a pila 1
       for (let i = 1; i <= Number(units); i++) {
         targetStackSelected.push(sourceStackSelected.top?.value!);
         sourceStackSelected.remove();
@@ -108,7 +105,7 @@ export class SupplyStacksPartTwo {
     );
   }
 
-  extractCurrentValues(): string {
+  printResult(): string {
     let positionTopBoxes = "";
     this.mapQueue.forEach((stack) => {
       positionTopBoxes += stack.first?.value;
@@ -132,29 +129,59 @@ export class SupplyStacksPartTwo {
       //mover una(1) caja de pila 2 a pila 1
       const u = Number(units);
       for (let i = 1; i <= u; i++) {
-        if (targetQueue === "3") {
-          //console.log("[LOG] 🚧 ->", i, sourceQueueSelected, 'COLA '+sourceQueue);
-        }
-        if (units === "1" && targetQueue === "1") {
-          // console.log("[LOG] 🚧 ", { queue1 });
-          // console.log("[LOG] 🚧 ", sourceQueueSelected.first?.value);
-          // console.log('[LOG] 🚧 ', {sourceQueueSelected})
-          // targetQueueSelected.push(sourceQueueSelected.first?.value!)
-          // sourceQueueSelected.deQueue();
+        
+        if (units === "1") {
+          targetQueueSelected.push(sourceQueueSelected.first?.value!)
+          sourceQueueSelected.deQueue();
         } else {
-          // targetQueueSelected.enQueue(sourceQueueSelected.first?.value!);
-          // sourceQueueSelected.deQueue();
-        }
-        targetQueueSelected.enQueue(sourceQueueSelected.first?.value!);
-        sourceQueueSelected.deQueue();
-        if (units === "1" && targetQueue === "1") {
-          //console.log("[LOG] 🚧 ", { queue1 });
+          targetQueueSelected.enQueue(sourceQueueSelected.first?.value!);
+          sourceQueueSelected.deQueue();
         }
       }
-      // 1, 2, 1;
-      // 3, 1, 3;
-      // 2, 2, 1;
-      // 1, 1, 2;
     });
   };
 }
+
+
+//     [D]    
+// [N] [C]    
+// [Z] [M] [P]
+//  1   2   3 
+const q1  = new BoxQueue(['N','Z'])
+const q2  = new BoxQueue(["D", "C", "M"]);
+const q3  = new BoxQueue(['P'])
+
+q1.push(q2.first!.value);
+q2.deQueue()
+// [D]
+// [N] [C]    
+// [Z] [M] [P]
+//  1   2   3 
+//console.log('[LOG] 🚧 1', q1,q2,q3)
+
+
+q3.push(q1.first!.value)
+q1.deQueue()
+// [N] [C] [D]
+// [Z] [M] [P]
+//  1   2   3 
+//console.log('[LOG] 🚧 2', q1,q2,q3)
+//console.log('[LOG] 🚧 1', q3)
+
+q3.enQueue(q1.first!.value)
+q1.deQueue()
+//        [D]
+//    [C] [N]
+//[Z] [M] [P]
+// 1   2   3
+console.log('[LOG] 🚧 2', q3)
+q3.enQueue(q1.first!.value)
+//console.log('[LOG] 🚧 3', q3)
+q1.deQueue()
+//        [D]
+//        [N]
+//    [C] [Z]
+//    [M] [P]
+// 1   2   3
+console.log('[LOG] 🚧 3',q3)
+

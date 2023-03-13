@@ -23,16 +23,6 @@ export class BoxQueue {
       this.first = newNode;
       this.last = newNode;
     }
-    if (this.length === 1) {
-      const pointer = this.first;
-      
-      // this.first = newNode;
-      // this.last = pointer
-      //this.last = newNode;
-      //console.log('[LOG] 🚧 ', value)
-      //this.first = newNode;
-      // this.last = this.last;
-    }
     if (this.length >= 1) {
       this.last!.next = newNode;
       this.last = newNode;
@@ -42,9 +32,9 @@ export class BoxQueue {
   }
 
   deQueue() {
-    if(this.length === 0) {
-      console.error('El Queue está vacío, no hay elementos para eliminar');
-    } else if(this.length === 1) {
+    if (this.length === 0) {
+      console.error("El Queue está vacío, no hay elementos para eliminar");
+    } else if (this.length === 1) {
       const deleteNode = this.first;
       this.first = deleteNode!.next;
       this.last = null;
@@ -80,4 +70,5 @@ export class BoxQueue {
 
     return this;
   }
+  
 }
