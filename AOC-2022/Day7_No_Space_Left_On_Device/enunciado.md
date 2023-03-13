@@ -51,7 +51,7 @@ Dentro de la salida de la terminal, las líneas que comienzan con **$** son **co
     - **cd ..** se mueve hacia fuera un nivel: encuentra el directorio que contiene el directorio actual, luego convierte ese directorio en el directorio actual.
     - **cd** __/__ cambia el directorio actual al directorio más externo, __/__.
   - ls **lista** de medios . Imprime todos los archivos y directorios contenidos inmediatamente por el directorio actual:
-    - **123** abcsignifica que el directorio actual contiene un archivo cuyo nombre **abc** es de tamaño **123**.
+    - **123 abc**  significa que el directorio actual contiene un archivo cuyo nombre **abc** es de tamaño **123**.
     - **dir xyz** significa que el directorio actual contiene un directorio llamado **xyz**.
 
 Dados los comandos y la salida en el ejemplo anterior, puede determinar que el sistema de archivos se ve visualmente así:
