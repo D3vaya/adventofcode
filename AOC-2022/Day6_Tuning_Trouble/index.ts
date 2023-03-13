@@ -7,7 +7,13 @@ nppdvjthqldpwncqszvftbrmjlhg
 nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg
 zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw`.split("\n");
 
-const tuningTrouble = (input: string) => {
+const INPUT_MOCK_EXAMPLE = `mjqjpqmgbljsphdztnvjfqwrcgsmlb
+bvwbjplbgvbhsrlpgdmjqwftvncz
+nppdvjthqldpwncqszvftbrmjlhg
+nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg
+zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw`.split("\n");
+
+const tuningTrouble = (input: string, maxCounter: number) => {
   let letter = "";
   let pointerCounter = 0;
 
@@ -15,7 +21,7 @@ const tuningTrouble = (input: string) => {
     if (!letter.includes(input[i])) {
       letter += input[i];
       ++pointerCounter;
-      if (letter.length === 4) {
+      if (letter.length === maxCounter) {
         return pointerCounter;
       }
     } else {
@@ -30,6 +36,14 @@ const tuningTrouble = (input: string) => {
 };
 
 // Success Result 1647 ⭐️
-INPUT.forEach((input) => {
-  console.log("[LOG] ⭐️ ", tuningTrouble(input));
+// INPUT.forEach((input) => {
+//   console.log("[LOG] ⭐️ ", tuningTrouble(input));
+// });
+
+INPUT_MOCK_EXAMPLE.forEach((input) => {
+  console.log("[LOG] ⭐️ ", tuningTrouble(input, 4));
+});
+
+INPUT_MOCK_EXAMPLE.forEach((input) => {
+  console.log("[LOG] ⭐️ ", tuningTrouble(input, 14));
 });
