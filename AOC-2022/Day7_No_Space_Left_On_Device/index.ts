@@ -26,15 +26,23 @@ $ ls
 4060174 j
 8033020 d.log
 5626152 d.ext
-7214296 k`;
+7214296 k`.split("\n");
 
-export const noSpaceLeftOnDevice = () => {
+const CMD = "$";
+const CMD_DIR = "dir";
+export const noSpaceLeftOnDevice = (input: string[]) => {
   const tree = new BinarySearchTree();
-  tree.insert(10);
-  tree.insert(15);
-  tree.insert(8);
-  tree.insert(20);
-  console.log('[LOG] 🚧 ', tree)  
+  console.log("[LOG] 🚧 ", input );
+  input.forEach(instruction => {
+    if(instruction.includes(CMD)){
+      console.log('[LOG] 🚧 instruction', {instruction})
+    }
+    if(instruction.includes(CMD_DIR)){
+      console.log('[LOG] 🚧 dir', {instruction})
+    }
+    
+  })
+  
 };
 
-console.log(noSpaceLeftOnDevice())
+noSpaceLeftOnDevice(INPUT_MOCK);
