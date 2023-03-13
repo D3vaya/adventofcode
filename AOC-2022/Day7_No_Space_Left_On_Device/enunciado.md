@@ -73,7 +73,7 @@ Dados los comandos y la salida en el ejemplo anterior, puede determinar que el s
     - k (file, size=7214296)
 ```
 
-Aquí hay cuatro directorios: /(el directorio más externo), ay d(que están en /), y e(que están en a). Estos directorios también contienen archivos de varios tamaños.
+Aquí hay cuatro directorios: __/__ (el directorio más externo), **a** y **d** (que están en __/__), y **e** (que están en **a**). Estos directorios también contienen archivos de varios tamaños.
 
 Dado que el disco está lleno, su primer paso probablemente debería ser encontrar directorios que sean buenos candidatos para la eliminación. Para ello, debe determinar el **tamaño total** de cada directorio. El tamaño total de un directorio es la suma de los tamaños de los archivos que contiene, directa o indirectamente. (Los directorios en sí mismos no cuentan como si tuvieran un tamaño intrínseco).
 
