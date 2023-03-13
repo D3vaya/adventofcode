@@ -36,4 +36,20 @@ Aqui hay algunos ejemplos mas:
 
 **¿Cuántos caracteres deben procesarse antes de que se detecte el primer marcador de inicio de paquete?**
 
+## ⭐️⭐️ Parte Dos
+
+El sistema de comunicación de su dispositivo detecta correctamente los paquetes, pero sigue sin funcionar. Parece que también necesita buscar **mensajes**.
+
+Un **marcador de inicio de mensaje** es como un marcador de inicio de paquete, excepto que consta de **14 caracteres distintos** en lugar de 4.
+
+Estas son las primeras posiciones de los marcadores de inicio de mensaje para todos los ejemplos anteriores:
+
+  - `mjqjpqmgbljsphdztnvjfqwrcgsmlb`: primer marcador después del carácter **19**
+  - `bvwbjplbgvbhsrlpgdmjqwftvncz`: primer marcador después del carácter **23**
+  - `nppdvjthqldpwncqszvftbrmjlhg`: primer marcador después del carácter **23**
+  - `nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg`: primer marcador después del carácter **29**
+  - `zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw`: primer marcador después del carácter **26**
+  - 
+**¿Cuántos caracteres deben procesarse antes de que se detecte el primer marcador de inicio de mensaje?**
+
 [Para comenzar, obtenga la entrada de el desafío.](./input.txt)
