@@ -79,7 +79,7 @@ Dado que el disco está lleno, su primer paso probablemente debería ser encontr
 
 Los tamaños totales de los directorios anteriores se pueden encontrar de la siguiente manera:
 
-  - El tamaño total del directorio `e` es **584** porque contiene un solo archivo ide tamaño 584 y ningún otro directorio.
+  - El tamaño total del directorio `e` es **584** porque contiene un solo archivo `i` de tamaño 584 y ningún otro directorio.
   - El directorio `a` tiene un tamaño total de **94853** porque contiene archivos **f** (tamaño 29116), **g** (tamaño 2557) y **h.lst** (tamaño 62596), además de archivos **i** indirectamente ( **a** contiene **e** que contiene **i**).
   - El directorio `d` tiene un tamaño total de **24933642** .
   - Como directorio más externo, __/__ contiene todos los archivos. Su tamaño total es **48381165** , la suma del tamaño de cada archivo.
