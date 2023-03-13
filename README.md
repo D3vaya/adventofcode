@@ -18,3 +18,5 @@ You don't need a computer science background to participate - just a little prog
   - [versión español](./AOC-2022/Day5_Supply_Stacks/enunciado.md)
 - [⭐️ Day 6: Tuning Trouble](./AOC-2022/Day6_Tuning_Trouble/statement.md)
   - [versión español](./AOC-2022/Day6_Tuning_Trouble/enunciado.md)
+- [⭐️ Day 7: No Space Left On Device](./AOC-2022/Day7_No_Space_Left_On_Device/statement.md)
+  - [versión español](./AOC-2022/Day7_No_Space_Left_On_Device/enunciado.md)
