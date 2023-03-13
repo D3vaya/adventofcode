@@ -1,6 +1,6 @@
 import { join } from "path";
 import { readFileSync } from "fs";
-import { BinarySearchTree } from "./trees";
+import { Tree } from "./trees";
 
 const INPUT = readFileSync(join(__dirname, "input.txt"), "utf8").split("\n");
 
@@ -28,21 +28,93 @@ $ ls
 5626152 d.ext
 7214296 k`.split("\n");
 
-const CMD = "$";
-const CMD_DIR = "dir";
-export const noSpaceLeftOnDevice = (input: string[]) => {
-  const tree = new BinarySearchTree();
-  console.log("[LOG] 🚧 ", input );
-  input.forEach(instruction => {
-    if(instruction.includes(CMD)){
-      console.log('[LOG] 🚧 instruction', {instruction})
-    }
-    if(instruction.includes(CMD_DIR)){
-      console.log('[LOG] 🚧 dir', {instruction})
-    }
-    
-  })
-  
+const COMMANDS = {
+  "$ cd": "",
+  dir: "",
+  ls: "",
 };
+const CMD_CD = "$";
+const CMD_DIR = "dir";
 
-noSpaceLeftOnDevice(INPUT_MOCK);
+interface CMD {
+  command: string;
+  terminal: Terminal;
+  execute: () => boolean;
+}
+
+// COMMANDS
+
+class DirCommand implements CMD {
+  command: string;
+  terminal: Terminal;
+  constructor(cmd: string, t: Terminal) {
+    this.command = cmd;
+    this.terminal = t;
+  }
+
+  execute(): boolean {
+    return false;
+  }
+}
+
+class CreateFileCommand implements CMD {
+  command: string;
+  terminal: Terminal;
+  constructor(cmd: string, t: Terminal) {
+    this.command = cmd;
+    this.terminal = t;
+  }
+
+  execute(): boolean {
+    return false;
+  }
+}
+class LsCommand implements CMD {
+  command: string;
+  terminal: Terminal;
+  constructor(cmd: string, t: Terminal) {
+    this.command = cmd;
+    this.terminal = t;
+  }
+
+  execute(): boolean {
+    return false;
+  }
+}
+class CdCommand implements CMD {
+  command: string;
+  terminal: Terminal;
+  constructor(cmd: string, t: Terminal) {
+    this.command = cmd;
+    this.terminal = t;
+  }
+
+  execute(): boolean {
+    console.log('- / (Dir)')
+    this.terminal.tree.insert(1)
+    console.log("[LOG] 🚧 TREE", this.terminal.tree);
+    return false;
+  }
+}
+
+class Terminal {
+  tree: Tree;
+  arrayCommands: CMD[] = [];
+  commands: Map<string, CMD> = new Map();
+
+  constructor(cmds: string[]) {
+    if (!cmds) throw `${cmds} undefined`;
+    if (cmds.length === 0) throw `${cmds} empty`;
+    this.tree = new Tree();
+    cmds.forEach((command) => {});
+  }
+
+  exe() {
+    const c = new CdCommand("$ cd /", this);
+    c.execute();
+  }
+}
+
+
+const t = new Terminal(['$ cd /'])
+t.exe()
