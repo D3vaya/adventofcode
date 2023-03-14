@@ -190,12 +190,12 @@ noop
 
 Las intensidades de señal interesantes se pueden determinar de la siguiente manera:
 
-  - Durante el ciclo 20, el registro Xtiene el valor **21**, por lo que la intensidad de la señal es **20 * 21 = 420 . (El vigésimo ciclo ocurre a la mitad del segundo addx -1, por lo que el valor de registro Xes el valor inicial, 1más todos los demás addxvalores hasta ese punto: 1 + 15 - 11 + 6 - 3 + 5 - 1 - 8 + 13 + 4 = 21.)**
-  - Durante el ciclo 60, el registro Xtiene el valor **19**, por lo que la intensidad de la señal es **60 * 19 = 1140.**
-  - Durante el ciclo 100, el registro Xtiene el valor **18**, por lo que la intensidad de la señal es **100 * 18 = 1800.**
-  - Durante el ciclo 140, el registro Xtiene el valor **21**, por lo que la intensidad de la señal es **140 * 21 = 2940.**
-  - Durante el ciclo 180, el registro Xtiene el valor **16**, por lo que la intensidad de la señal es **180 * 16 = 2880.**
-  - Durante el ciclo 220, el registro Xtiene el valor **18**, por lo que la intensidad de la señal es **220 * 18 = 3960.**
+  - Durante el ciclo 20, el registro **X** tiene el valor **21**, por lo que la intensidad de la señal es **20 * 21 = 420 . (El vigésimo ciclo ocurre a la mitad del segundo addx -1, por lo que el valor de registro Xes el valor inicial, 1más todos los demás addxvalores hasta ese punto: 1 + 15 - 11 + 6 - 3 + 5 - 1 - 8 + 13 + 4 = 21.)**
+  - Durante el ciclo 60, el registro **X** tiene el valor **19**, por lo que la intensidad de la señal es **60 * 19 = 1140.**
+  - Durante el ciclo 100, el registro **X** tiene el valor **18**, por lo que la intensidad de la señal es **100 * 18 = 1800.**
+  - Durante el ciclo 140, el registro **X** tiene el valor **21**, por lo que la intensidad de la señal es **140 * 21 = 2940.**
+  - Durante el ciclo 180, el registro **X** tiene el valor **16**, por lo que la intensidad de la señal es **180 * 16 = 2880.**
+  - Durante el ciclo 220, el registro **X** tiene el valor **18**, por lo que la intensidad de la señal es **220 * 18 = 3960.**
 
 La suma de estas intensidades de señal es __13140__.
 
