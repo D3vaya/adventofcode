@@ -17,7 +17,7 @@ Los Elfos ya lanzaron un **cuadricóptero** para generar un mapa con la altura d
 35390
 ```
 
-Cada árbol se representa como un solo dígito cuyo valor es su altura, donde 0es el más bajo y 9es el más alto.
+Cada árbol se representa como un solo dígito cuyo valor es su altura, donde 0 es el más bajo y 9 es el más alto.
 
 Un árbol es **visible** si todos los demás árboles entre él y un borde de la cuadrícula son **más bajos** que él. Solo considere árboles en la misma fila o columna; es decir, solo mire hacia arriba, hacia abajo, hacia la izquierda o hacia la derecha desde cualquier árbol determinado.
 
